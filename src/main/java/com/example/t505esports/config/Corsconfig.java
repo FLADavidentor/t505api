@@ -11,7 +11,7 @@ public class Corsconfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("http://localhost:5173"); // Tu frontend
+        config.addAllowedOrigin("*"); // Tu frontend
         config.addAllowedMethod("*"); // Permitir todos los métodos (GET, POST, etc.)
         config.addAllowedHeader("*"); // Permitir todos los encabezados
         source.registerCorsConfiguration("/**", config);
